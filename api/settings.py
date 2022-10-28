@@ -58,8 +58,10 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://example.com",
     "https://sub.example.com",
-    "http://localhost:8080",
+    "http://localhost:8081",
     "http://127.0.0.1:9000",
+    "http://10.0.2.2:8000",
+    "http://10.0.2.2:8081",
 ]
 
 
