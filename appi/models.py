@@ -8,5 +8,8 @@ class Producto(models.Model):
     precio = models.CharField(max_length=30)
     img = models.CharField(max_length=700)
 
+    def __str__(self):
+        return self.nombre
+
 class Orden(models.Model):
     productos = models.ManyToManyField(Producto)
