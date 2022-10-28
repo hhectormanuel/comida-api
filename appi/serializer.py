@@ -12,3 +12,12 @@ class OrdenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Orden
         fields = '__all__'
+        
+    def to_representation(self, instance):
+        
+        return {
+            'id' : instance.id,
+            'nombre' : instance.nombre,
+            'precio' : instance.precio,
+            'img' : instance.img
+            }
