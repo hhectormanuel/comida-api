@@ -98,14 +98,26 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'api_b60q',
+#         'USER': 'api_b60q_user',
+#         'PASSWORD': 'bx7zii85FwFtUyqypdHud61YIuGf0QDj',
+#         'HOST': 'dpg-cddgo02rrk07n4urvotg-a.oregon-postgres.render.com',
+#         'PORT': '5432',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'api_b60q',
-        'USER': 'api_b60q_user',
-        'PASSWORD': 'bx7zii85FwFtUyqypdHud61YIuGf0QDj',
-        'HOST': 'dpg-cddgo02rrk07n4urvotg-a.oregon-postgres.render.com',
-        'PORT': '5432',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'wHRdY4TRXwBWO3pfyz7u',
+        'HOST': 'containers-us-west-31.railway.app',
+        'PORT': '6053',
     }
 }
 
