@@ -13,3 +13,10 @@ class Producto(models.Model):
 
 class Orden(models.Model):
     productos = models.ManyToManyField(Producto)
+
+
+class Contacto(models.Model):
+    nombre = models.CharField(max_length=400)
+    email = models.CharField(max_length=400)
+    numero = models.CharField(max_length=400)
+    mensaje = models.CharField(max_length=400)

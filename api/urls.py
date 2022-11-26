@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('appi.urls', namespace='appi')),
     path('', include('appi.router')),
+    path('', include('appi.router2')),
 ]
