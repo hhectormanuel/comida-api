@@ -1,5 +1,10 @@
 from rest_framework import serializers
-from .models import Producto, Orden, Contacto
+from .models import Producto, Orden, Contacto, Jefe
+
+class JefeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Jefe
+        fields = '__all__'
 
 class ContactoSerializer(serializers.ModelSerializer):
     class Meta:
