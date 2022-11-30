@@ -20,3 +20,7 @@ class Contacto(models.Model):
     email = models.CharField(max_length=400)
     numero = models.CharField(max_length=400)
     mensaje = models.CharField(max_length=400)
+    
+    
+class Jefe(models.Model):
+    email = models.CharField(max_length=400)
