@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Producto, Orden, Contacto
-from .serializer import ProductoSerializer, OrdenSerializer, ContactoSerializer
+from .serializer import ProductoSerializer, OrdenSerializer, ContactoSerializer, JefeSerializer
 from rest_framework.viewsets import ModelViewSet
 
 # Create your views here.
@@ -28,4 +28,8 @@ class ContactoView(APIView):
 
 class ContactoViewSet(ModelViewSet):
     serializer_class = ContactoSerializer
+    queryset = serializer_class.Meta.model.objects.all()
+    
+class JefeViewSet(ModelViewSet):
+    serializer_class = JefeSerializer
     queryset = serializer_class.Meta.model.objects.all()
