@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('appi.urls', namespace='appi')),
     path('', include('appi.router')),
     path('', include('appi.router2')),
+    path('', include('appi.router3')),
 ]
