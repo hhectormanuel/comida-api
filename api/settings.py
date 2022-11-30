@@ -63,7 +63,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.0.2.2:8000",
     "http://10.0.2.2:8081",
     "http://127.0.0.1:8000",
-    "https://pwa-8xro.onrender.com".
+    "https://pwa-8xro.onrender.com",
     "https://lavenganzademaria.000webhostapp.com"
 ]
 
